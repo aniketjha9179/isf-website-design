@@ -18,6 +18,8 @@ import {
 } from "lucide-react";
 import React, { useRef, useEffect, useState } from "react";
 import Testimonials from '../components/Testimonials'
+import StockimgAnimation from './StockimgAnimation'
+import MarqueeGallery from './MarqueeGallery'
 
 const Home = () => {
   // Animation hook for scroll-triggered reveals
@@ -73,7 +75,7 @@ const HeroSection = () => {
   }, [images.length]);
 
   return (
-    <section className="relative py-20 bg-gradient-to-br from-blue-400 via-white to-purple-50 overflow-hidden">
+    <section className="relative py-20 bg-gradient-to-br from-blue-400 via-white to-purple-50 overflow-hidden ">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 to-purple-600/5"></div>
       <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-200/20 to-purple-200/20 rounded-full blur-3xl transform translate-x-32 -translate-y-32"></div>
@@ -496,6 +498,8 @@ const HeroSection = () => {
       <FeaturesSection />
       <CTASection />
       <Testimonials />
+      <StockimgAnimation />
+      <MarqueeGallery />
       
       {/* Global CSS for animations */}
       <style jsx global>{`

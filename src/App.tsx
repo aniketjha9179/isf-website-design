@@ -10,7 +10,8 @@ import Feature from "./pages/Features.jsx";
 import Login from './pages/Login.jsx'
 import FAQSection from './pages/Faq.jsx'
 import BlogSection from './pages/BlogSection.jsx'
-import Testimonials from './components/Testimonials.js'
+import Partner from './pages/Partner.jsx'
+
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
             <Route path="/pricing" element={<PricingComponent />} />
             <Route path="/faq" element={<FAQSection />} />
             <Route path="/Blog" element={<BlogSection />} />
+            <Route path="/Partner" element={<Partner />} />
           </Routes>
         </main>
 
